@@ -24,7 +24,8 @@ searchForm.addEventListener('submit',(e) =>{
 
 //async function for fetching data from api
 async function fetchAPI(){
-    const baseURL = `https://api.edamam.com/search?q=pizza&app_id=${APP_ID}&app_key=${APP_key}`;
+    try{
+        const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_key}`;
     //fetching the data
     const response = await fetch(baseURL);
     //converting the data to json
@@ -32,7 +33,10 @@ async function fetchAPI(){
     console.log(recipeData);
     //calling a function for generating html
     generateHTML(recipeData.hits);
-    
+    }catch(error){
+        console.error('there was an error', error);
+    }
+       
 }
 
 //function for generating html
