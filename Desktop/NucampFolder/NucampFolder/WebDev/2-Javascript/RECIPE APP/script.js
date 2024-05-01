@@ -20,14 +20,37 @@ searchForm.addEventListener('submit',(e) =>{
     //console.log(searchQuery);
     //calling the function that fetches the api
     fetchAPI();
-})
+});
 
 //async function for fetching data from api
 async function fetchAPI(){
-    const baseURL = `https://api.edamam.com/doc/open-api/recipe-search-v2.json?q=pizza&app_id=${APP_ID}&app_key=${APP_key}`;
+    const baseURL = `https://api.edamam.com/search?q=pizza&app_id=${APP_ID}&app_key=${APP_key}`;
     //fetching the data
     const response = await fetch(baseURL);
     //converting the data to json
     const recipeData = await response.json();
-    console.log(recipeData)
+    console.log(recipeData);
+
+    //calling a function for generating html
+    generateHTML(recipeData.hits);
+}
+
+function for generating html
+function generateHTML(results){
+    //variable containing the html elements
+    let generatedHTML = '';
+    results.map(result => {
+        generatedHTML += 
+        `
+        <div class="item">
+            <img src="ball.jpeg" alt="">
+            <div class="flex-container">
+                <h2 class="title">This is a recipe</h2>
+                <a class="view-button" href="#">view recipe</a>
+            </div>
+            <p class="item-data">Calories: 120</p>
+        </div>
+        `
+    });
+    searchResultDiv.innerHTML = generatedHTML;
 }
