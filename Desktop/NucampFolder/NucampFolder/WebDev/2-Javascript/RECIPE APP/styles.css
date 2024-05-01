@@ -26,6 +26,7 @@ h1{
 html{
     font-family: 'ubuntu';
     font-size: 12px;
+    font-weight: 600;
 }
 
 section{
@@ -108,7 +109,20 @@ form ion-icon{
 
 item .title{
     color: black;
-    margin: 20px 10px 0 0;
+    margin: 10px 10px 0 0;
     font-size: 1.8rem;
     font-weight: 400;
+
+}
+
+.view-button{
+    text-decoration: none;
+    text-align: centre;
+    width: 130px;
+    padding: 10px 0;
+    background-color: white;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    align-items: flex-start;
+
 }
