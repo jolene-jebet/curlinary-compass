@@ -30,12 +30,12 @@ async function fetchAPI(){
     //converting the data to json
     const recipeData = await response.json();
     console.log(recipeData);
-
     //calling a function for generating html
     generateHTML(recipeData.hits);
+    
 }
 
-function for generating html
+//function for generating html
 function generateHTML(results){
     //variable containing the html elements
     let generatedHTML = '';
@@ -43,12 +43,14 @@ function generateHTML(results){
         generatedHTML += 
         `
         <div class="item">
-            <img src="ball.jpeg" alt="">
+            <img src="${result.recipe.image}" alt="">
             <div class="flex-container">
-                <h2 class="title">This is a recipe</h2>
-                <a class="view-button" href="#">view recipe</a>
+                <h2 class="title">${result.recipe.label}</h2>
+                <a class="view-button" href="${result.recipe.url}">view recipe</a>
             </div>
-            <p class="item-data">Calories: 120</p>
+            <p class="item-data">Calories: ${result.recipe.calories.toFixed(2)}</p>
+            <p class="item-data">Cuisine type: ${result.recipe.cuisineType}</p>
+            <p class="item-data">Diet labels: ${result.recipe.dietLabels}</p>
         </div>
         `
     });
