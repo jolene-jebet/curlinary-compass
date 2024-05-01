@@ -20,6 +20,7 @@ img{
 
 h1{
     font-family: 'Bonbon';
+    
 }
 
 html{
@@ -34,7 +35,7 @@ section{
     align-items: center;
     justify-content: center;
     padding: 100px 0;
-    background-color: rgb(55, 113, 142);
+    background-color:  rgb(1, 121, 111);
 }
 
 .container{
@@ -42,4 +43,11 @@ section{
     height: auto;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.brand{
+    text-align: center;
+    font-size: 4em;
+    color: bisque;
+    margin-bottom: 30px;
 }
