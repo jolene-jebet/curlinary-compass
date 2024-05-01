@@ -21,14 +21,15 @@ img{
     object-fit: cover;
 }
 
-h1{
+h1, h2{
     font-family: 'Kalam';
+    font-size: large;
     
 }
 
 html{
-    font-family: 'ubuntu';
-    font-size: 12px;
+    font-family: 'Ubuntu';
+    font-size: 10px;
     font-weight: 600;
 }
 
@@ -55,6 +56,13 @@ section{
     color: bisque;
     margin-bottom: 30px;
 }
+
+.brand-description {
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 10px;
+}
+
 
 form{
     width: 90%;
