@@ -40,7 +40,8 @@ section{
     align-items: center;
     justify-content: center;
     padding: 100px 0;
-    background-color:  rgb(1, 121, 111);
+    /* background-color:  rgb(1, 121, 111); */
+    background: linear-gradient(135deg, #01796f, #02a59e);
 }
 
 .container{
@@ -52,15 +53,18 @@ section{
 
 .brand{
     text-align: center;
-    font-size: 4em;
+    font-size: 5em;
     color: bisque;
     margin-bottom: 30px;
+    
 }
 
 .brand-description {
-    font-size: 1.5em;
-    color: #fff;
+    font-size: 2.5em;
+    color: black;
     margin-top: 10px;
+    font-family: 'Kalam';
+    text-align: center;
 }
 
 
