@@ -74,5 +74,19 @@ form ion-icon{
     width: 9%;
     font-size: 3rem;
     margin: -10px;
-    
+}
+
+.search-result{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template: auto / repeat(auto-fit, minmax(300px,1fr));
+}
+
+.item{
+    width: 100%;
+    border: 8px;
+    background-color: rgb(129, 216, 208);
+    padding: 15px;
 }
