@@ -92,6 +92,7 @@ form ion-icon{
     padding: 15px;
     overflow: hidden;
     border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .item img{
@@ -120,12 +121,18 @@ item .title{
     text-align: centre;
     width: 100px;
     padding: 10px 0;
-    background-color: white;
+    background-color: #555;
     font-size: 1.4rem;
     margin-top: 10px;
     align-items: flex-start;
     border-radius: 4px;
+    color: #fff;
+    transition: background-color 0.3s ease;
 
+}
+
+.item .view-button:hover {
+    background-color: #333;
 }
 
 .item-data{
