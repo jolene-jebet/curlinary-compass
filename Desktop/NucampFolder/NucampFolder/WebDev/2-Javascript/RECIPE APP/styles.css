@@ -105,3 +105,10 @@ form ion-icon{
     align-items: centre;
     justify-content: space-between;
 }
+
+item .title{
+    color: black;
+    margin: 20px 10px 0 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
