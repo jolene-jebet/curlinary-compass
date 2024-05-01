@@ -33,4 +33,13 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 100px 0;
+    background-color: rgb(55, 113, 142);
+}
+
+.container{
+    width: 90%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
