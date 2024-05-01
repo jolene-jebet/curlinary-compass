@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1>Survey</h1>
+    <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">
+        <fieldset>
+            <legend>Your Information</legend>
+            <div>
+                <label for="firstname">First Name: </label>
+                <input type ="text" id="firstname" name="firstname" placeholder="Your first name">
+            </div>
+            <div>
+                <label for="secondname">Second Name:</label>
+                 <input type ="text" id="secondname" name="secondname" placeholder="Your second name">
+            </div>
+            <div>
+                <label for="emailaddress">Email address: </label>
+                <input type ="text" id="emailaddress" name="emailaddress" placeholder="Your email address">
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Survey Questions</legend>
+            <div>
+                Favourite sport:
+                <input type="radio" name="sport" value="Rugby">Rugby
+                <input type="radio" name="sport" value="Basketball">Basketball
+                <input type="radio" name="sport" value="Football">Football
+                 
+            </div>
+            <div>
+                Your pets:
+                <input type="checkbox" name="pets" value="Dogs">Dogs
+                <input type="checkbox" name="pets" value="Cats">Cats
+                <input type="checkbox" name="pets" value="Others">Others
+                  
+            </div>
+
+        </fieldset>
+
+        <input type="submit">
+        
+    </form>
+    
+</body>
+</html>
