@@ -87,6 +87,15 @@ form ion-icon{
 .item{
     width: 100%;
     border: 8px;
-    background-color: rgb(129, 216, 208);
+    background-color: bisque;
     padding: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+
 }
