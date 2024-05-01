@@ -51,3 +51,21 @@ section{
     color: bisque;
     margin-bottom: 30px;
 }
+
+form{
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: bisque;
+    border-radius: 30px;
+}
+
+form input{
+    width: 90%;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    display: inline-block;
+}
