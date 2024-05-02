@@ -59,7 +59,10 @@ section{
     
 }
 
-.
+.brand img{
+    width: 100px;
+    margin-top: 50px;
+}
 
 .brand-description {
     font-size: 2.5em;
